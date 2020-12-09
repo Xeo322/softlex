@@ -1,0 +1,133 @@
+@import 'fonts.scss';
+@import 'variables.scss';
+@import 'card.scss';
+@import "~swiper/swiper-bundle.css";
+@import 'footer.scss';
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: rgb(255, 255, 255);
+}
+
+.header__funding_text {
+  position: relative;
+  width: 10px;
+  height: 10px;
+  background: red;
+  top: 7px;
+  border-radius: 50%;
+  &:after {
+    position: relative;
+    display: inline-block;
+    left: 30px;
+    bottom: 7px;
+    content: 'проекты, которым необходимо помочь';
+    width: 400px;
+    color: #000000;
+    font-family: Rubik, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  @media (max-width: 654px) {
+    &:after {
+      content: 'Те, кому сейчас необходима помощь';
+      font-size: 10px;
+      letter-spacing: 0.5px;
+      line-height: 20px;
+      width: 300px;
+      left: 20px;
+    }
+  }
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 0;
+  .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: rgba(177, 155, 105, 0.5);
+    transition: 1.5s ease;
+    &:hover {
+      background: #b19b69;
+    }
+  }
+}
+
+.swiper-pagination-bullet-active {
+  background: #b19b69;
+}
+
+.swiper-pagination {
+  margin-top: 20px ;
+  bottom: 0 !important;
+  display: none;
+  @media (max-width: 654px) {
+    display: block;
+  }
+}
+
+.main_swiper {
+  margin-top: 54px !important;
+  padding: 19px 21px 60px 21px !important;
+  @media (max-width: 654px) {
+    margin-top: 34px !important;
+  }
+}
+
+._container {
+  max-width: $bp1 + px;
+  margin: 0 auto;
+  @media (max-width: 952px) {
+    max-width: $bp2 + px;
+  }
+  @media (max-width: 654px) {
+    max-width: $bp3 + px;
+  }
+}
+
+.main__center_button {
+  margin-top: -13px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 60px;
+  &:after,&:before {
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: rgba(229, 222, 204, 1);
+  }
+  @media (max-width: 654px) {
+    margin-top: 30px;
+  }
+}
+
+.main__button {
+  margin: 0 10px;
+  position: relative;
+  border: none;
+  color: rgba(177, 155, 105, 1);
+  width: 201px;
+  height: 40px;
+  box-shadow: 0 10px 25px rgba(177, 155, 105, 0.3);
+  border-radius: 40px;
+  background-color: #ffffff;
+  outline: none;
+  transition: 1.5s;
+  &:hover {
+    background: #E5DECC;
+  }
+}
+
+
+

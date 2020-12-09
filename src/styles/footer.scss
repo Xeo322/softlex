@@ -1,0 +1,98 @@
+footer {
+  margin-top: 101px;
+  background: #005ef3;
+  width: 100%;
+  height: 529px;
+  overflow: hidden;
+  @media (max-width: 952px) {
+    height: 630px;
+  }
+  @media (max-width: 654px) {
+    height: 700px;
+  }
+
+  .footer__about_funding {
+    width: 10px;
+    height: 10px;
+    background: red;
+    border-radius: 50%;
+    margin-top: 86px;
+
+    &:after {
+      display: inline-block;
+      position: relative;
+      left: 30px;
+      bottom: 7px;
+      content: 'о пожертвованиях';
+      width: 400px;
+      color: #ffffff;
+      font-family: Rubik, serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 13px;
+      line-height: 23px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+    }
+  }
+
+  .footer__swipers {
+    display: flex;
+    overflow: hidden;
+    margin-top: 40px;
+    @media(max-width: 952px) {
+      display: block;
+    }
+  }
+
+  .swipers__left_swiper {
+    margin-left: unset;
+    overflow: visible;
+    height: 368px;
+    @media (max-width: 952px) {
+      height: 30%;
+      margin-bottom: 40px;
+    }
+  }
+
+  .swiper-container-vertical {
+    .swiper-button-next,
+    .swiper-button-prev {
+      color: #e3edfe;
+      transform: rotate(90deg);
+      transform-origin: left center;
+      left: 40px;
+    }
+
+    .swiper-button-prev {
+      top: 250px;
+    }
+
+    .swiper-button-next {
+      top: 350px;
+    }
+  }
+
+  .swiper-slide {
+    color: rgba(76, 142, 247, 1);
+  }
+
+  .swiper-slide-active {
+    color: #ffffff;
+  }
+
+  .right_swiper__container {
+    margin-left: auto;
+    max-width: 758px;
+    button {
+      margin-top: 40px;
+      border-radius: 10px;
+      border: none;
+      outline: none;
+      height: 80px;
+      width: 198px;
+      background: linear-gradient(180deg, #E3D1A0 0.52%, #A79156 100%);
+      color: #FFFFFF;
+    }
+  }
+}
