@@ -210,6 +210,9 @@
     &:hover {
       background: inherit;
     }
+    &:focus {
+      outline: none;
+    }
   }
   @media (max-width: 952px) and (min-width: 655px) {
     order: -1;

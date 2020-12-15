@@ -19,6 +19,7 @@ footer {
     margin-top: 86px;
 
     &:after {
+      @extend h3;
       display: inline-block;
       position: relative;
       left: 30px;
@@ -26,13 +27,9 @@ footer {
       content: 'о пожертвованиях';
       width: 400px;
       color: #ffffff;
-      font-family: Rubik, serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 13px;
-      line-height: 23px;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
+      @media (max-width: 654px) {
+        left: 20px;
+      }
     }
   }
 
@@ -52,6 +49,17 @@ footer {
     @media (max-width: 952px) {
       height: 30%;
       margin-bottom: 40px;
+      .swiper-slide{
+        display: flex;
+        justify-content: flex-end;
+      }
+      .swiper-slide-active{
+        display: block;
+      }
+      .swiper-slide-next {
+        display: flex;
+        justify-content: space-around;
+      }
     }
   }
 
@@ -85,6 +93,7 @@ footer {
     margin-left: auto;
     max-width: 758px;
     button {
+      position: relative;
       margin-top: 40px;
       border-radius: 10px;
       border: none;
@@ -93,6 +102,108 @@ footer {
       width: 198px;
       background: linear-gradient(180deg, #E3D1A0 0.52%, #A79156 100%);
       color: #FFFFFF;
+      &:focus {
+        outline: none;
+      }
+      @media (max-width: 654px) {
+        width: 268px;
+        height: 60px;
+        margin-left:26px;
+        &:after {
+          display: block;
+          position: absolute;
+          content: url("../styles/img/heart.svg");
+          left: 88px;
+          top: 5px;
+          width: 92px;
+          height: 80px;
+
+        }
+      }
+    }
+  }
+
+  .swiper-button-disabled {
+    display: none;
+  }
+
+  .left_swiper__navigation {
+    position: absolute;
+    z-index: 2;
+    .custom_prevEl,.custom_nextEl {
+      position: absolute;
+      border: none;
+      outline: none;
+      height: 32.5px;
+      width: 14px;
+      background: center / contain no-repeat url("../styles/img/arrow.png");
+    }
+    @media (max-width: 1920px) {
+      width: 160px;
+      height: 70px;
+      bottom: -30px;
+      left: 0;
+      background: linear-gradient(0deg, rgba(0, 94, 243, 1) 21%, rgba(255, 255, 255,0));
+      .custom_prevEl {
+        top: 0;
+        bottom: 0;
+        right: 70px;
+        transform: rotate(270deg);
+      }
+      .custom_nextEl {
+        top: 0;
+        bottom: 0;
+        left: 40px;
+        transform: rotate(90deg);
+      }
+    }
+    @media (max-width: 952px) {
+      width: 80px;
+      height: 70px;
+      bottom: 0;
+      right: 0;
+      left: unset;
+      background: linear-gradient(270deg, rgba(0, 94, 243, 1) 21%, rgba(255, 255, 255,0));
+      .custom_prevEl {
+        top: 15px;
+        bottom: 0;
+        left: 60px ;
+        right: 0;
+        transform: rotate(180deg);
+      }
+      .custom_nextEl {
+        top: unset;
+        bottom: -5px;
+        left: 60px;
+        right: 0;
+        transform: unset;
+      }
+    }
+    @media (max-width: 654px) {
+      width: 80px;
+      height: 70px;
+      bottom: 0;
+      right: 0;
+      left: unset;
+      background: linear-gradient(270deg, rgba(0, 94, 243, 1) 21%, rgba(255, 255, 255,0));
+      .custom_prevEl,.custom_nextEl {
+        height: 18px;
+        width: 10px;
+      }
+      .custom_prevEl {
+        top: 40px;
+        bottom: 0;
+        left: 60px ;
+        right: 0;
+        transform: rotate(180deg);
+      }
+      .custom_nextEl {
+        top: unset;
+        bottom: -5px;
+        left: 60px;
+        right: 0;
+        transform: unset;
+      }
     }
   }
 }
