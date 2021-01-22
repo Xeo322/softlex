@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/softlex/static/css/main.7c447510.chunk.css",
+    "main.js": "/softlex/static/js/main.582d5769.chunk.js",
+    "main.js.map": "/softlex/static/js/main.582d5769.chunk.js.map",
+    "runtime-main.js": "/softlex/static/js/runtime-main.730a8db8.js",
+    "runtime-main.js.map": "/softlex/static/js/runtime-main.730a8db8.js.map",
+    "static/css/2.71aa9b90.chunk.css": "/softlex/static/css/2.71aa9b90.chunk.css",
+    "static/js/2.9e5bf72a.chunk.js": "/softlex/static/js/2.9e5bf72a.chunk.js",
+    "static/js/2.9e5bf72a.chunk.js.map": "/softlex/static/js/2.9e5bf72a.chunk.js.map",
+    "index.html": "/softlex/index.html",
+    "static/css/2.71aa9b90.chunk.css.map": "/softlex/static/css/2.71aa9b90.chunk.css.map",
+    "static/css/main.7c447510.chunk.css.map": "/softlex/static/css/main.7c447510.chunk.css.map",
+    "static/js/2.9e5bf72a.chunk.js.LICENSE.txt": "/softlex/static/js/2.9e5bf72a.chunk.js.LICENSE.txt",
+    "static/media/Vector.45cf517d.svg": "/softlex/static/media/Vector.45cf517d.svg",
+    "static/media/main.scss": "/softlex/static/media/heart.df595dad.svg",
+    "static/media/location.bf7ca178.svg": "/softlex/static/media/location.bf7ca178.svg",
+    "static/media/react_png.ef20e673.png": "/softlex/static/media/react_png.ef20e673.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.730a8db8.js",
+    "static/css/2.71aa9b90.chunk.css",
+    "static/js/2.9e5bf72a.chunk.js",
+    "static/css/main.7c447510.chunk.css",
+    "static/js/main.582d5769.chunk.js"
+  ]
+}
